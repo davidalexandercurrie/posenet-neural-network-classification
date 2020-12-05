@@ -23,7 +23,7 @@ function setup() {
   });
 
   let options = {
-    inputs: 1404,
+    inputs: 34,
     outputs: ['label'],
     task: 'classification',
     debug: 'false',
@@ -106,6 +106,7 @@ function drawSkeleton() {
 function mousePressed() {
   if (predictions[0] != undefined) {
     let inputs = getInputs();
+    console.log(getInputs());
     if (state == 'collection') {
       let target = {
         label: targetLabel,
