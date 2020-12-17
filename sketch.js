@@ -4,7 +4,7 @@ let predictions = [];
 
 let model;
 let targetLabel;
-let state = 'collection';
+let state = 'prediction';
 
 let nnResults;
 let loopBroken = false;
